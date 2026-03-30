@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar">
+  <div>
+    <a href="index.html">Accueil</a>
+    <a href="news.html">Actualités</a>
+    <a href="companies.html">Entreprises</a>
+  </div>
+  <a href="#">Discord</a>
+</div>
+
+<div class="container">
+  <div class="card">
+    <h1>Bienvenue en Indonésie</h1>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
