@@ -80,30 +80,30 @@ button {
   cursor: pointer;
 }
 
-/* 📱 MOBILE */
 @media screen and (max-width: 768px) {
 
   .menu-toggle {
     display: block;
+    font-size: 25px;
+    cursor: pointer;
   }
 
   .nav-links {
     display: none;
     flex-direction: column;
-    width: 100%;
-    text-align: center;
-    background: rgba(0,0,0,0.9);
-    position: absolute;
+    background: rgba(0,0,0,0.95);
+    position: fixed; /* 🔥 change absolute → fixed */
     top: 60px;
     left: 0;
+    width: 100%;
+    z-index: 999;
   }
 
   .nav-links a {
-    padding: 10px;
-    display: block;
+    padding: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
   }
 
   .nav-links.active {
     display: flex;
   }
-    }
