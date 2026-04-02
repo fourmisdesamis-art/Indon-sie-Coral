@@ -5,6 +5,15 @@ function toggleMenu() {
   menu.classList.toggle("active");
 }
 
+// 👇 AJOUT IMPORTANT
+document.addEventListener("click", function(event) {
+  const menu = document.getElementById("navLinks");
+  const toggle = document.querySelector(".menu-toggle");
+
+  if (!menu.contains(event.target) && !toggle.contains(event.target)) {
+    menu.classList.remove("active");
+  }
+}
 // INSCRIPTION
 function register() {
   const username = document.getElementById("registerUsername").value;
