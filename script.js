@@ -1,11 +1,11 @@
-console.log("Site chargé !");
+console.log("Site chargé")
 
 function toggleMenu() {
   const menu = document.getElementById("navLinks");
   menu.classList.toggle("active");
 }
 
-// 👇 AJOUT IMPORTANT
+// Fermer le menu quand on clique ailleurs
 document.addEventListener("click", function(event) {
   const menu = document.getElementById("navLinks");
   const toggle = document.querySelector(".menu-toggle");
@@ -13,7 +13,8 @@ document.addEventListener("click", function(event) {
   if (!menu.contains(event.target) && !toggle.contains(event.target)) {
     menu.classList.remove("active");
   }
-}
+});
+
 // INSCRIPTION
 function register() {
   const username = document.getElementById("registerUsername").value;
