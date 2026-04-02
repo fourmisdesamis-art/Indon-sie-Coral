@@ -68,3 +68,42 @@ button {
   }
 
     }
+/* MENU NORMAL (PC) */
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* 📱 MOBILE */
+@media screen and (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background: rgba(0,0,0,0.9);
+    position: absolute;
+    top: 60px;
+    left: 0;
+  }
+
+  .nav-links a {
+    padding: 10px;
+    display: block;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+    }
